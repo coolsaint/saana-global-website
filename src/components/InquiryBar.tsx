@@ -36,7 +36,7 @@ export function InquiryBar() {
             <select
               value={formData.make}
               onChange={(e) => setFormData({ ...formData, make: e.target.value })}
-              className="input-light text-sm"
+              className="input-light-sm"
             >
               <option value="">Select Make</option>
               <option value="toyota">Toyota</option>
@@ -55,7 +55,7 @@ export function InquiryBar() {
               onChange={(e) =>
                 setFormData({ ...formData, model: e.target.value })
               }
-              className="input-light text-sm"
+              className="input-light-sm"
             />
 
             <select
@@ -63,7 +63,7 @@ export function InquiryBar() {
               onChange={(e) =>
                 setFormData({ ...formData, budget: e.target.value })
               }
-              className="input-light text-sm"
+              className="input-light-sm"
             >
               <option value="">Budget Range</option>
               <option value="3000000">Up to ৳30 Lakh</option>
@@ -80,10 +80,10 @@ export function InquiryBar() {
               onChange={(e) =>
                 setFormData({ ...formData, phone: e.target.value })
               }
-              className="input-light text-sm"
+              className="input-light-sm"
             />
 
-            <button type="submit" className="btn-dark text-sm">
+            <button type="submit" className="btn-dark-sm">
               Get Quote
             </button>
           </form>

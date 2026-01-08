@@ -25,37 +25,37 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link
+            <a
               href="#inventory"
               className="text-sm font-black uppercase tracking-wider hover:text-[#CA8A04] transition-colors"
             >
               Inventory
-            </Link>
-            <Link
+            </a>
+            <a
               href="#how-it-works"
               className="text-sm font-black uppercase tracking-wider hover:text-[#CA8A04] transition-colors"
             >
               How It Works
-            </Link>
-            <Link
+            </a>
+            <a
               href="#auction"
               className="text-sm font-black uppercase tracking-wider hover:text-[#CA8A04] transition-colors"
             >
               Auction Request
-            </Link>
-            <Link
+            </a>
+            <a
               href="#contact"
               className="text-sm font-black uppercase tracking-wider hover:text-[#CA8A04] transition-colors"
             >
               Contact
-            </Link>
+            </a>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="#inquiry" className="btn-primary">
+            <a href="#inquiry" className="btn-primary">
               Get Quote
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,37 +79,37 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t-4 border-[#18181B] py-6">
             <nav className="flex flex-col gap-4">
-              <Link
+              <a
                 href="#inventory"
                 className="text-sm font-black uppercase tracking-wider py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Inventory
-              </Link>
-              <Link
+              </a>
+              <a
                 href="#how-it-works"
                 className="text-sm font-black uppercase tracking-wider py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
-              </Link>
-              <Link
+              </a>
+              <a
                 href="#auction"
                 className="text-sm font-black uppercase tracking-wider py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Auction Request
-              </Link>
-              <Link
+              </a>
+              <a
                 href="#contact"
                 className="text-sm font-black uppercase tracking-wider py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </Link>
-              <Link href="#inquiry" className="btn-primary text-center mt-4">
+              </a>
+              <a href="#inquiry" className="btn-primary text-center mt-4">
                 Get Quote
-              </Link>
+              </a>
             </nav>
           </div>
         )}

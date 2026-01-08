@@ -33,6 +33,12 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Offset for sticky header on anchor links */
+[id] {
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -80,6 +86,26 @@ body {
 }
 
 .btn-outline:hover {
+  background: #18181B;
+  color: #FFFFFF;
+}
+
+.btn-outline-sm {
+  background: transparent;
+  color: #18181B;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #18181B;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+.btn-outline-sm:hover {
   background: #18181B;
   color: #FFFFFF;
 }
@@ -146,6 +172,36 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
+}
+
+.input-light-sm {
+  background: white;
+  border: 3px solid #18181B;
+  color: #18181B;
+  padding: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  width: 100%;
+}
+
+.btn-dark-sm {
+  background: #18181B;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #18181B;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+.btn-dark-sm:hover {
+  background: #3F3F46;
 }
 
 .section {

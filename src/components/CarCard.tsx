@@ -75,7 +75,7 @@ export function CarCard({ car }: CarCardProps) {
               ৳{formatPrice(car.price)}
             </p>
           </div>
-          <button className="btn-outline text-xs px-4 py-2">View Details</button>
+          <button className="btn-outline-sm border-4 border-[#18181B]">View Details</button>
         </div>
       </div>
     </div>
